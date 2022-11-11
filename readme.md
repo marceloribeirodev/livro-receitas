@@ -131,7 +131,7 @@ Após isso no eclipse realizar o seguinte passo a passo para configuração do m
 
 - Ir na aba **Window** -> **Preferences** -> **Maven** -> **User Settings**
 - Após isso, clicar em Browse em Global Settings e selecionar o **SettingsPJe2.1** da pasta **.m2** na pasta do seu usUário
-- Ao finalizar, cicar em Apply and Close
+- Ao finalizar, clicar em **Apply and Close**
 
 <img src="img_preferences_maven.png">
 
@@ -158,7 +158,7 @@ Após isso no eclipse realizar o seguinte passo a passo para configuração do m
 - Novamente clicar em **Servers** para adicionar o servidor -> Clicar em: **JBoss Comunity** -> e logo após em: Wildfly 9.x Runtime
 - Clicar na opção: Alternate JRE: e selecionar o JDK 1.8
 - Apontar o standalone para standalone-hmlg2.2-2g que se encontra na pasta: C:\Desenvolvimento\Server\wildfly_pje2_cnj\standalone\configuration
-- Adicionar *pje-web(web)*
+- Adicionar ***pje-web(web)***
 - Finaliza
 
 2. Configurando os argumentos do servidor
