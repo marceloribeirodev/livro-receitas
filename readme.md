@@ -12,8 +12,8 @@ Apresentação de criação do ambiente de desenvolvimento do PJe
 - [Clonando o projeto](#clonando-projeto)  
 - [Configuração do Eclipse](#config-eclipse)  
 - [Configuração do Servidor](#config-servidor)  
-- [Sugestão para melhorar o ambiente de desenvolvimento](#melhorias)  
 - [Ultimos ajustes para subir o ambiente](#ultimos-ajustes)  
+- [Sugestão para melhorar o ambiente de desenvolvimento](#melhorias)  
 
 
 <a id="config-minima-maquina"></a>
@@ -89,7 +89,7 @@ Para executar este projeto é necessário instalar:
 
 ## Configuração do Wildfly
 
-1. Extrair do arquivo **wildfly_pje2.1_cnj.7z** na pasta: Wildfly
+1. Vamos iniciar fazendo o download do arquivo **wildfly_pje2.1_cnj.7z** na pasta: Wildfly e depois extrair na nossa pasta: C:\Desenvolvimento\Server
 
 2. Inserir os drivers do PostgreSQl para conexão com o banco
 
