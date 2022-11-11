@@ -13,6 +13,8 @@ Apresentação de criação do ambiente de desenvolvimento do PJe
 - [Configuração do Eclipse](#config-eclipse)  
 - [Configuração do Servidor](#config-servidor)  
 - [Sugestão para melhorar o ambiente de desenvolvimento](#melhorias)  
+- [Ultimos ajustes para subir o ambiente](#ultimos-ajustes)  
+
 
 <a id="config-minima-maquina"></a>
 
@@ -51,7 +53,7 @@ Para executar este projeto é necessário instalar:
    - M2_HOME - Apontando para o local de instalação do Maven
    - PATH - Adicionar "%JAVA_HOME%\bin" e "%M2_HOME%\bin"
 
-2. Após intatalações e configurações verifique se o ambiente está pronto:
+2. Após as instalações e configurações verifique se o ambiente está pronto:
 
 - Execute o seguinte comando no terminal 
 
@@ -118,11 +120,11 @@ As configurações na IDE ...
 
 1. Importando o projeto - PJE TJBA 
 
-Ir na aba **File** -> **Import** -> Buscar por **Maven** e ir em -> **Existing Maven Projects**
+- Ir na aba **File** -> **Import** -> Buscar por **Maven** e ir em -> **Existing Maven Projects**
 
 2. Configurando o Maven 
 
-Ir na pasta oculta **.m2** do usuário da sua máquina que está em: C:\Users e inserir o arquivo **SettingsPJe2.1** que esta na pasta dos arquivos disponibilizadas na seção: Pré-Requisitos
+- Ir na pasta oculta **.m2** do usuário da sua máquina que está em: C:\Users e inserir o arquivo **SettingsPJe2.1** que esta na pasta dos arquivos disponibilizadas na seção: Pré-Requisitos
 
 Após isso no eclipse realizar o seguinte passo a passo para configuração do maven:
 
@@ -173,6 +175,20 @@ Após incluir o servidor vamos realizar as seguintes alterações:
 - Em VM arguments:
 
             "-Dprogram.name=JBossTools: WildFly 9.x" -server -Xms1024m -Xmx2048m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true "-Dorg.jboss.boot.log.file=C:\Desenvolvimento\Server\wildfly_pje2.1_cnj\standalone\log\boot.log" "-Dlogging.configuration=file:C:\Desenvolvimento\Server\wildfly_pje2.1_cnj\standalone\configuration\logging.properties" "-Djboss.home.dir=C:\Desenvolvimento\Server\wildfly_pje2.1_cnj" -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 -Duser.language=pt -Duser.country=BR -noverify -Djboss.as.management.blocking.timeout=3600
+
+<a id="ultimos-ajustes"></a>
+
+## Ultimos ajustes para subir o ambiente
+
+Após todo processo de configuração, vamos realizar os últimos ajustes para subir o ambiente:
+
+1. Alterar o arquivo pom.xml
+
+- Localizar no pom.xml a propriedade/atributo localhost e setar como true
+
+<img src="tag_localhost.png">
+
+2. Subir o ambiente e testar via link: localhost:8080/pje
 
 <a id="melhorias"></a>
 
