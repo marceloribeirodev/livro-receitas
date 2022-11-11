@@ -12,7 +12,7 @@ Apresentação de criação do ambiente de desenvolvimento do PJe
 - [Clonando o projeto](#clonando-projeto)  
 - [Configuração do Eclipse](#config-eclipse)  
 - [Configuração do Servidor](#config-servidor)  
-- [Sugestão para melhorar o ambiente de desenvolvimento](#config-servidor)  
+- [Sugestão para melhorar o ambiente de desenvolvimento](#melhorias)  
 
 <a id="config-minima-maquina"></a>
 
@@ -66,7 +66,7 @@ Para executar este projeto é necessário instalar:
 
 3. Execute o seguinte comando no terminal:
 
-      mvn -version
+            mvn -version
 
 - Resultado esperado
 
@@ -84,6 +84,7 @@ Para executar este projeto é necessário instalar:
        
          
 
+<a id="config-wildfly"></a>
 
 ## Configuração do Wildfly
 
@@ -101,6 +102,7 @@ Para executar este projeto é necessário instalar:
 3. Inserir os arquivos que estão na pasta **StandAlone Pje** em: C:\Desenvolvimento\Server\wildfly_pje2_cnj\standalone\configuration
       
 
+<a id="clonando-projeto"></a>
 
 ## Clonando o projeto
 
@@ -109,6 +111,7 @@ Para executar este projeto é necessário instalar:
          git clone http://gitlab.tjba.jus.br/setim/din/cosis/judicial/pje/pje_tjba.git
 
 
+<a id="config-eclipse"></a>
 
 ## Configuração do Eclipse
 
@@ -138,11 +141,13 @@ Após isso no eclipse realizar o seguinte passo a passo para configuração do m
     
     - Após isso, selecionar o **jdk 1.8 clicando no checkbox** e dar o **Apply and Close**
     
+<a id="config-servidor"></a>
       
 ## Configuração do Servidor
 
 - Ir em **Servers** -> JBoss Community -> Escolher o Wildfly 9x -> Selecionar o Standalone
 
+<a id="melhorias"></a>
 
 ## Sugestão para melhorar o ambiente de desenvolvimento
 
