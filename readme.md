@@ -27,7 +27,6 @@ Para subir o ambiente será necessário ter uma máquina com no mínimo as segui
 Tendo essas configurações o ambiente irá subir tranquilamente
 
 
-
 <a id="pré-requisitos"></a>
 
 ## Pré-requisitos 
@@ -37,12 +36,12 @@ Estas são as instalações e configurações necessárias para executar o proje
 Para executar este projeto é necessário instalar:
 
 - Apache Maven 3.8.6 - https://maven.apache.org/download.cgi
-- Java 1.8
+- Java 1.8 - Pasta: Arquivos para Download - Pré Requisitos 
 - Eclipse IDE 2022‑09 - https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2022-09/R/eclipse-inst-jre-win64.exe
 - Git - https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe
-- Wildfly
+- Wildfly - Pasta: Wildfly
 
-**Obs: Será disponibilizado uma pasta com o restante dos arquivos que não tem link para download. O link do repositório é: https://maven.apache.org/download.cgi**  
+**Obs: No teams na aba: Arquivos terão todos os outros arquivos**  
 
 
 1. Após a instalação é necessário configurar as variaveis de ambiente:
@@ -88,18 +87,18 @@ Para executar este projeto é necessário instalar:
 
 ## Configuração do Wildfly
 
-1. Extrair do arquivo **wildfly_pje2.1_cnj.7z** na pasta: C:\Desenvolvimento\Server
+1. Extrair do arquivo **wildfly_pje2.1_cnj.7z** na pasta: Wildfly
 
 2. Inserir os drivers do PostgreSQl para conexão com o banco
 
-- No caminho: C:\Desenvolvimento\Server\wildfly_pje2.1_cnj\modules\system\layers\base\org\postgresql\main inserir os seguintes arquivos que está no repositorio na subpasta **Drivers Postgresql**:
+- No caminho: C:\Desenvolvimento\Server\wildfly_pje2.1_cnj\modules\system\layers\base\org\postgresql\main inserir os seguintes arquivos que está na aba **Arquivos** a pasta: **Drivers Postgresql** :
     - postgresql-42.2.6.jar
     
     - postgresql-9.2-1002.jdbc4.jar
     
     - module.xml
     
-3. Inserir os arquivos que estão na pasta **StandAlone Pje** em: C:\Desenvolvimento\Server\wildfly_pje2_cnj\standalone\configuration
+3. Inserir os arquivos que estão na pasta **Standalone PJE** em: C:\Desenvolvimento\Server\wildfly_pje2_cnj\standalone\configuration
       
 
 <a id="clonando-projeto"></a>
@@ -147,7 +146,9 @@ Após isso no eclipse realizar o seguinte passo a passo para configuração do m
       
 ## Configuração do Servidor
 
-- Ir em **Servers** -> JBoss Community -> Escolher o Wildfly 9x -> Selecionar o Standalone
+- Clicar na Aba: Servers e vamos criar um servidor indo em: **No servers are available. Click this link to create a new server**
+- Em **Red Hat JBoss Middleware**, clicar em: **JBoss AS, Wildfly, & EAP Server Tools** e logo após aceita e finaliza
+- 
 
 <a id="melhorias"></a>
 
