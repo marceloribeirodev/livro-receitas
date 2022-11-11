@@ -117,9 +117,9 @@ Para executar este projeto é necessário instalar:
 
 As configurações na IDE ...
 
-1. Importando o Maven 
+1. Importando o projeto - PJE TJBA 
 
-    - Ir na aba **File** -> **Import** -> Buscar por **Maven** e ir em -> **Existing Maven Projects**
+Ir na aba **File** -> **Import** -> Buscar por **Maven** e ir em -> **Existing Maven Projects**
 
 2. Configurando o Maven 
 
@@ -128,13 +128,14 @@ Ir na pasta oculta **.m2** do usuário da sua máquina que está em: C:\Users e 
 Após isso no eclipse realizar o seguinte passo a passo para configuração do maven:
 
 - Ir na aba **Window** -> **Preferences** -> **Maven** -> **User Settings**
-- Após isso, clicar em Browse em Global Settings e selecionar o **SettingsPJe2.1** da pasta **.m2** na pasta do seu usário
+- Após isso, clicar em Browse em Global Settings e selecionar o **SettingsPJe2.1** da pasta **.m2** na pasta do seu usUário
+- Ao finalizar, cicar em Apply and Close
 
 <img src="img_preferences_maven.png">
 
 3. Adicionando o JDK no Eclipse
 
-- Ir na aba **Window** -> **Preferences** -> **Java** e1 adicionar a pasta **jdk 1.8**
+- Ir na aba **Window** -> **Preferences** -> **Java** e adicionar a pasta **jdk 1.8**
     - **Add** -> **Standard VM** -> **JRE Home** (Selecionar a pasta do JDK) e clicar em **Finish**
     
     - Após isso, selecionar o **jdk 1.8 clicando no checkbox** e dar o **Apply and Close**
