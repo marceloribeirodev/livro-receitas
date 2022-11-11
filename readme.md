@@ -146,9 +146,33 @@ Após isso no eclipse realizar o seguinte passo a passo para configuração do m
       
 ## Configuração do Servidor
 
-- Clicar na Aba: Servers e vamos criar um servidor indo em: **No servers are available. Click this link to create a new server**
-- Em **Red Hat JBoss Middleware**, clicar em: **JBoss AS, Wildfly, & EAP Server Tools** e logo após aceita e finaliza
-- 
+1. Adicionando o Servidor
+
+- Instalar os componentes do JBoss:
+    - Clicar na Aba: Servers e vamos criar um servidor indo em: **No servers are available. Click this link to create a new server**
+    - Em **Red Hat JBoss Middleware**, clicar em: **JBoss AS, Wildfly, & EAP Server Tools** e logo após aceita e finaliza
+
+- Novamente clicar em **Servers** para adicionar o servidor -> Clicar em: **JBoss Comunity** -> e logo após em: Wildfly 9.x Runtime
+- Clicar na opção: Alternate JRE: e selecionar o JDK 1.8
+- Apontar o standalone para standalone-hmlg2.2-2g que se encontra na pasta: C:\Desenvolvimento\Server\wildfly_pje2_cnj\standalone\configuration
+- Adicionar *pje-web(web)*
+- Finaliza
+
+2. Configurando os argumentos do servidor
+
+Após incluir o servidor vamos realizar as seguintes alterações:
+
+- Clicando 2x no servidor, ir em: **Open launch configuration**
+
+<img src="img_arguments.png">
+
+- Em Program arguments:
+
+            -mp "C:\Desenvolvimento\Server\wildfly_pje2.1_cnj\modules" -jaxpmodule javax.xml.jaxp-provider -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone-hmlg2.2-2g.xml -Djboss.server.base.dir=C:\Desenvolvimento\Server\wildfly_pje2.1_cnj\standalone -Dpje.producao=false
+
+- Em VM arguments:
+
+            "-Dprogram.name=JBossTools: WildFly 9.x" -server -Xms1024m -Xmx2048m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true "-Dorg.jboss.boot.log.file=C:\Desenvolvimento\Server\wildfly_pje2.1_cnj\standalone\log\boot.log" "-Dlogging.configuration=file:C:\Desenvolvimento\Server\wildfly_pje2.1_cnj\standalone\configuration\logging.properties" "-Djboss.home.dir=C:\Desenvolvimento\Server\wildfly_pje2.1_cnj" -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 -Duser.language=pt -Duser.country=BR -noverify -Djboss.as.management.blocking.timeout=3600
 
 <a id="melhorias"></a>
 
