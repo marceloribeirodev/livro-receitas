@@ -121,8 +121,6 @@ As configurações na IDE ...
 
     - Ir na aba **File** -> **Import** -> Buscar por **Maven** e ir em -> **Existing Maven Projects**
 
-<img src="img_preferences_jdk.png">
-
 2. Configurando o Maven 
 
 Ir na pasta oculta **.m2** do usuário da sua máquina que está em: C:\Users e inserir o arquivo **SettingsPJe2.1** que esta na pasta dos arquivos disponibilizadas na seção: Pré-Requisitos
@@ -136,10 +134,13 @@ Após isso no eclipse realizar o seguinte passo a passo para configuração do m
 
 3. Adicionando o JDK no Eclipse
 
-- Ir na aba **Window** -> **Preferences** -> **Java** e adicionar a pasta **jdk 1.8**
+- Ir na aba **Window** -> **Preferences** -> **Java** e1 adicionar a pasta **jdk 1.8**
     - **Add** -> **Standard VM** -> **JRE Home** (Selecionar a pasta do JDK) e clicar em **Finish**
     
     - Após isso, selecionar o **jdk 1.8 clicando no checkbox** e dar o **Apply and Close**
+
+<img src="img_preferences_jdk.png">
+
     
 <a id="config-servidor"></a>
       
