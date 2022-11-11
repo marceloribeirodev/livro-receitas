@@ -38,7 +38,7 @@ Estas são as instalações e configurações necessárias para executar o proje
 Para executar este projeto é necessário instalar:
 
 - Apache Maven 3.8.6 - https://maven.apache.org/download.cgi
-- Java 1.8 - Pasta: Arquivos para Download - Pré Requisitos 
+- Java 1.8 - Pasta: Arquivos para Download
 - Eclipse IDE 2022‑09 - https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2022-09/R/eclipse-inst-jre-win64.exe
 - Git - https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe
 - Wildfly - Pasta: Wildfly
@@ -125,7 +125,7 @@ As configurações na IDE ...
 
 2. Configurando o Maven 
 
-- Ir na pasta oculta **.m2** do usuário da sua máquina que está em: C:\Users e inserir o arquivo **SettingsPJe2.1** que esta na pasta dos arquivos disponibilizadas na seção: Pré-Requisitos
+- Ir na pasta oculta **.m2** do usuário da sua máquina que está em: C:\Users e inserir o arquivo **settingsPJe2.1.xml** que esta na pasta: Arquivo para Download
 
 Após isso no eclipse realizar o seguinte passo a passo para configuração do maven:
 
