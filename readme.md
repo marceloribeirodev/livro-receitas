@@ -121,6 +121,7 @@ As configurações na IDE ...
 1. Importando o projeto - PJE TJBA 
 
 - Ir na aba **File** -> **Import** -> Buscar por **Maven** e ir em -> **Existing Maven Projects**
+- Selecionar a pasta que você incluiu o apache-maven e finalizar
 
 2. Configurando o Maven 
 
