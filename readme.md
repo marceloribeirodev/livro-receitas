@@ -116,7 +116,7 @@ Para executar este projeto é necessário instalar:
 
 ## Configuração do Eclipse
 
-As configurações na IDE ...
+Vamos realizar todas as configurações da nossa IDE
 
 1. Importando o projeto - PJE TJBA 
 
@@ -201,8 +201,8 @@ Verificamos algumas configurações do eclipse para ter uma melhor produtividade
 
 - Ir na aba **Window** -> **Preferences** -> **Terminal** -> **Validation**
 - E setar os seguintes checkbox:
-    - Allow projects to override these preference settings
-    - Suspend all validators
-    - Show a confirmation dialog when perfoming manual validations
+    - *Allow projects to override these preference settings*
+    - *Suspend all validators*
+    - *Show a confirmation dialog when perfoming manual validations*
 
 <img src="img_preferences_validation.png">
